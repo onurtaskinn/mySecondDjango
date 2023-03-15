@@ -90,6 +90,7 @@ WSGI_APPLICATION = 'persona.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+import dj_database_url
 
 DATABASES = {
     'default': {
@@ -97,6 +98,8 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+db_from_env = dj_database_url.config(default='postgres://onurtaskinn:UdzCX1yHYu8r@ep-cold-mountain-612242.eu-central-1.aws.neon.tech/neondb',conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 
 
 # Password validation
