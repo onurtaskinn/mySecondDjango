@@ -60,7 +60,9 @@ MIDDLEWARE = [
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
-    'https://mysecondassignment-19956.onrender.com'    
+    'https://mysecondassignment-19956.onrender.com',    
+    'http://localhost:3001',
+    'https://mysecondassignment-19956-localdjango.onrender.com',
 ]
 
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
