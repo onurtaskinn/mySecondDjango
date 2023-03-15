@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-g^_(%9j37*=1nhbbx!8o&5sq=e6isgw@%+izi6kz+mtv3c!ys2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['myseconddjango.onrender.com']
+ALLOWED_HOSTS = ['myseconddjango.onrender.com',
+                 '127.0.0.1']
 
 
 # Application definition
@@ -59,6 +60,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
+    'https://mysecondassignment-19956.onrender.com'    
 ]
 
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
